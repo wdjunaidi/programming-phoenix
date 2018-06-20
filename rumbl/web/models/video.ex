@@ -2,10 +2,10 @@ defmodule Rumbl.Video do
   use Rumbl.Web, :model
 
   schema "videos" do
-    field :url, :string
-    field :title, :string
-    field :description, :string
-    belongs_to :user, Rumbl.User, foreign_key: :user_id
+    field(:url, :string)
+    field(:title, :string)
+    field(:description, :string)
+    belongs_to(:user, Rumbl.User, foreign_key: :user_id)
 
     timestamps()
   end
